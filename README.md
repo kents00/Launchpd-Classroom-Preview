@@ -243,7 +243,6 @@ Comprehensive tools for organizing and running coding classrooms:
 - **Email Invitations** — Invite members via email with pre-assigned roles
 - **Member Management** — View, restrict, or remove organization members
 - **Organization Settings** — Profile customization, workspace management, member administration, and invitation management
-- **SSO Configuration** — Configure organization-level Single Sign-On with custom domain enforcement
 
 ### LMS Integration (LTI 1.3)
 
@@ -334,8 +333,7 @@ Comprehensive tools for organizing and running coding classrooms:
 ## Authentication & Security
 
 - **Email/Password Authentication** — Standard registration and login with password validation (minimum length, uppercase, special characters)
-- **OAuth 2.0 SSO** — Sign in with Google, GitHub, or Microsoft accounts
-- **Organization SSO** — Domain-enforced SSO for organizations with custom identity providers
+- **OAuth 2.0 Social Sign-In** — Sign in with Google, GitHub, or Microsoft accounts
 - **Two-Factor Authentication (2FA)** — TOTP-based 2FA with QR code setup via authenticator apps
 - **JWT Tokens** — Access tokens with refresh token rotation for persistent sessions
 - **Password Reset** — Email-based password reset flow with secure tokens
@@ -362,7 +360,7 @@ A dedicated admin console for platform operators and super administrators:
 - **System Logs** — Searchable audit logs with severity levels, source tracking, IP addresses, and user attribution
 - **Documentation Management** — CRUD management of public documentation articles and categories
 - **Platform Settings** — Configure system-wide settings including session timeouts, concurrent session limits, password policies, and MFA enforcement
-- **Auth & SSO Configuration** — Manage authentication providers and SSO settings
+- **Auth & Security Configuration** — Manage authentication policies and security settings
 - **LMS Integration Settings** — Platform-level LMS integration configuration
 - **Data Import/Export** — Bulk import users and data from CSV/Excel; configure and manage scheduled exports
 
@@ -418,7 +416,7 @@ The main student and teacher-facing application built with React 19 and Vite 6.
 - **DashboardLayout** — Sidebar navigation, organization switcher, and global search
 - **CommandPalette** — Keyboard-shortcut-activated command palette for quick navigation
 - **GlobalSearch** — Universal search across classrooms, activities, students, and projects
-- **AuthModal** — Multi-mode authentication modal (login, signup, 2FA, SSO, forgot/reset password)
+- **AuthModal** — Multi-mode authentication modal (login, signup, 2FA, OAuth, forgot/reset password)
 - **CreateClassroomModal** — Classroom creation wizard with icon picker and configuration
 - **CreateProjectModal** — Project creation with template selection
 - **ImportModal** — Import from GitHub repositories, URLs, or file upload
@@ -440,7 +438,7 @@ The NestJS 11 backend provides a comprehensive REST API and WebSocket services.
 | :--- | :--- | :--- |
 | **Auth** | `/auth` | Registration, login, OAuth callbacks, 2FA, password reset, session management |
 | **Users** | `/users` | User profile CRUD, avatar upload, contribution tracking |
-| **Organizations** | `/organizations` | Organization CRUD, member management, invite codes, SSO config |
+| **Organizations** | `/organizations` | Organization CRUD, member management, invite codes |
 | **Classrooms** | `/classrooms` | Classroom CRUD, student enrollment, roster management, archival |
 | **Classroom Posts** | `/classroom-posts` | Announcement posts, comments, and emoji reactions |
 | **Classroom Activities** | `/classroom-activities` | Activity CRUD, submissions, grading, quiz management |
