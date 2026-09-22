@@ -476,8 +476,7 @@ The PostgreSQL database is managed via Prisma ORM with 30+ models including:
 - `TimeSession`, `Badge`, `UserBadge`
 - `Notification`, `SupportTicket`, `SupportTicketMessage`
 - `DocCategory`, `DocArticle`
-- `SystemSettings`, `SystemLog`, `PasswordHistory`
-- `LmsIntegration`, `LtiResourceLink`
+- `GoogleClassroomIntegration`, `GoogleClassroomCourseMapping`, `GoogleClassroomWorkMapping`
 - `ScheduledExport`, `ImportJob`, `RefreshToken`
 
 ---
